@@ -16,19 +16,25 @@ function buttonQuit() {
 
 function buttonSP() {
     setTimeout(function() {
-        document.getElementById("titlescreen").style.display = "none";
-        document.getElementById("singleplayer").style.display = "block";
+        titlescreen.style.display = "none";
+        singleplayer.style.display = "block";
     }, 1);
 }
 
 function buttonSwCancel() {
     setTimeout(function() {
-        document.getElementById("titlescreen").style.display = "block";
-        document.getElementById("singleplayer").style.display = "none";
+        titlescreen.style.display = "block";
+        singleplayer.getElementById("singleplayer").style.display = "none";
     }, 1);
 }
 
 window.addEventListener("DOMContentLoaded", function() {
+
+const titlescreen = document.getElementById("titlescreen");
+const singleplayer = document.getElementById("singleplayer");
+const multiplayer = document.getElementById("multiplayer");
+const options = document.getElementById("options");
+
 
 const lines = [ /* 15 characters max - 5 characters min */
     "As seen on TV!",
@@ -64,7 +70,7 @@ const lines = [ /* 15 characters max - 5 characters min */
     "Ingots!",
     "Exploding creepers!",
     "That's not a moon!",
-    "l33t!",
+    "l33tc0d3!",
     "Now in JavaScript!",
     "Now CSS 3!",
     "Now HTML 5!",
@@ -76,7 +82,7 @@ const lines = [ /* 15 characters max - 5 characters min */
     "Down with O.P.P.!",
     "Closed source!",
     "Classy!",
-    "Wow!",
+    "Woahh!",
     "Not on Steam!",
     "Oh man!",
     "Check it out!",
@@ -100,7 +106,7 @@ const lines = [ /* 15 characters max - 5 characters min */
     "Technically good!",
     "Bringing home the bacon!",
     "Indie!",
-    "GOTY!",
+    "WOTY!",
     "Euclidian!",
     "Now in 2D only!",
     "Inspirational!",
@@ -122,12 +128,11 @@ const lines = [ /* 15 characters max - 5 characters min */
     "Bring it on!",
     "Random splash!",
     "Call your mother!",
-    "Mr-mr-mr-mrbeast!",
     "Monster infighting!",
     "Loved by millions!",
     "Ultimate edition!",
     "Freaky!",
-    "You've got a brand new key!",
+    "You've got a new key!",
     "Water proof!",
     "Uninflammable!",
     "Whoa, dude!",
@@ -276,10 +281,24 @@ splashText.innerHTML = lineResult;
 const splashlength = splashText.textContent.length;
 console.log(splashlength);
 
-const parentWidth = 550; // replace 700 with the width of the parent element
-const textWidth = splashText.offsetWidth;
-const marginLeft = (parentWidth - textWidth);
+const parentWidth = 700;
 
-splashText.style.marginLeft = marginLeft / 1.5 + "px";
+/* Show title after 4 seconds */
+
+const mojanglogo = document.getElementById("mojanglogo");
+
+setTimeout(function() {
+    mojanglogo.style.display = "none";
+    titlescreen.style.display = "block";
+    document.querySelector("body").style.backgroundSize = "110px"
+}, 2);
+
+setInterval(function() {
+    const textWidth = splashText.offsetWidth;
+    const marginLeft = (parentWidth - textWidth);
+
+    splashText.style.marginLeft = marginLeft / 1.5 + "px";
+}, 10);
 
 });
+
