@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url(fonts/minecraft_font.ttf);
+}
+
+* {
+    color: #e0e0e0;
+    font-family: 'Minecraft';
+    text-shadow: 4px 4px #383838;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzJlMjExNyIgZD0iTTAgMGgxTTUgMGgxTTEzIDBoMU0xNSAwaDFNOSAxaDFNMCAyaDFNNCAyaDFNOCAyaDFNMTQgMmgxTTIgM2gxTTcgM2gxTTEzIDNoMU0zIDRoMU0xNSA1aDFNMCA2aDFNNyA2aDJNMTAgNmgyTTAgN2gxTTIgN2gyTTEyIDloMk0zIDEwaDJNNiAxMGgxTTkgMTBoMk01IDExaDFNNiAxMmgxTTE0IDEyaDJNMTAgMTNoMU0xMyAxM2gxTTMgMTRoMU0yIDE1aDEiIC8+CjxwYXRoIHN0cm9rZT0iIzI2MWIxMyIgZD0iTTEgMGgyTTYgMGgyTTEgMWgxTTUgMWgxTTEwIDFoMU0xMyAxaDFNMCAzaDFNNCAzaDFNOCAzaDJNMTEgM2gxTTE0IDNoMU0wIDRoMU0yIDRoMU01IDRoMU04IDRoMU0xMyA0aDFNMiA1aDJNNSA1aDFNMTMgNmgxTTE1IDZoMU00IDdoMk04IDdoMU0xMCA3aDJNMTQgN2gyTTAgOGgxTTMgOGgxTTUgOGgxTTkgOGgyTTAgOWgyTTE1IDloMU0wIDEwaDJNNyAxMGgxTTEyIDEwaDJNMCAxMWgxTTMgMTFoMk03IDExaDFNOSAxMWgyTTEzIDExaDFNMiAxMmgxTTQgMTJoMk0xIDEzaDFNNiAxM2gyTTE0IDEzaDJNMCAxNGgxTTE0IDE0aDJNMCAxNWgxTTMgMTVoMk03IDE1aDNNMTIgMTVoMiIgLz4KPHBhdGggc3Ryb2tlPSIjMWUxNTBmIiBkPSJNMyAwaDJNOCAwaDJNMTEgMGgyTTE0IDBoMU0wIDFoMU0zIDFoMk04IDFoMU0xMSAxaDJNMSAyaDJNNSAyaDNNOSAyaDNNMTUgMmgxTTMgM2gxTTYgM2gxTTEwIDNoMU0xMiAzaDFNMTUgM2gxTTEgNGgxTTYgNGgyTTEwIDRoMU0xMiA0aDFNMTUgNGgxTTAgNWgxTTQgNWgxTTkgNWgyTTEyIDVoM00yIDZoMk01IDZoMk05IDZoMU0xMiA2aDFNMTQgNmgxTTEgN2gxTTYgN2gyTTEyIDdoMk0xIDhoMk00IDhoMU02IDhoMU04IDhoMU0xMSA4aDNNMTUgOGgxTTMgOWgyTTcgOWg1TTE0IDloMU0yIDEwaDFNNSAxMGgxTTExIDEwaDFNMTUgMTBoMU0xIDExaDJNNiAxMWgxTTExIDExaDFNMTQgMTFoMU0wIDEyaDFNMyAxMmgxTTcgMTJoN00wIDEzaDFNMiAxM2gyTTUgMTNoMU04IDEzaDFNMTIgMTNoMU0xIDE0aDFNNCAxNGgxTTYgMTRoMU04IDE0aDNNMTIgMTRoMk0xIDE1aDFNNSAxNWgxTTEwIDE1aDJNMTQgMTVoMSIgLz4KPHBhdGggc3Ryb2tlPSIjMTYwZjBhIiBkPSJNMTAgMGgxTTIgMWgxTTcgMWgxTTE0IDFoMk0zIDJoMU0xMiAyaDJNNSAzaDFNNCA0aDFNOSA0aDFNMTQgNGgxTTEgNWgxTTYgNWgzTTExIDVoMU0xIDZoMU05IDdoMU03IDhoMU0xNCA4aDFNMiA5aDFNNSA5aDJNOCAxMGgxTTEyIDExaDFNMTUgMTFoMU0xIDEyaDFNOSAxM2gxTTExIDEzaDFNMiAxNGgxTTUgMTRoMU03IDE0aDFNMTEgMTRoMU0xNSAxNWgxIiAvPgo8cGF0aCBzdHJva2U9IiMyMjIyMjIiIGQ9Ik02IDFoMU00IDZoMU0xNCAxMGgxTTYgMTVoMSIgLz4KPHBhdGggc3Ryb2tlPSIjMWIxYjFiIiBkPSJNMSAzaDFNMTEgNGgxTTggMTFoMSIgLz4KPHBhdGggc3Ryb2tlPSIjMWQxNjExIiBkPSJNNCAxM2gxIiAvPgo8L3N2Zz4=");
+    background-size: 110px;
+    height: 100%;
+}
+
+.logo {
+    margin-top: 70px
+}
+
+.text {
+    font-size: 40px;
+}
+
+.selectworldbg {
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin-top: -35px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.selectworldbuttons {
+    
+}
+
+button {
+    height: 75px;
+    width: 735px;
+    margin-top: 20px;
+    font-size: 35px;
+    background-image: url("img/minecraftbuttonnormal.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: initial;
+    image-rendering: pixelated;
+    border-width: 0px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.halfbutton {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-image: url("img/minecraftbuttonhalfnormal.png");
+    width: 360px;
+}
+
+button:hover {
+    background-image: url("img/minecraftbuttonhover.png")
+}
+
+.halfbutton:hover {
+    background-image: url("img/minecraftbuttonhalfhover.png")
+}
+
+.onethirdbutton {
+    background-image: url("img/minecraftbutton13.png");
+    width: 560px;
+}
+
+.onethirdbutton:hover {
+    background-image: url("img/minecraftbutton13hover.png")
+}

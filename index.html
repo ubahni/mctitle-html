@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minecraft Beta 1.7</title>
+        <link rel="icon" href="https://web.archive.org/web/20150630225904im_/https://minecraft.net/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <noscript><marquee style="display: fixed; color: red">Content on this site may not be available due to your JavaScript setting being off. Please enable it in your settings to use important features</marquee></noscript>
+
+    </head>
+
+    <body style="margin:0">
+        <div id="titlescreen" style="display: none;">
+        <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; display: fixed; color: #505050">Minecraft Beta 1.7</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <center>
+            <img height="160px" class="logo" src="img/logo.svg">
+            <br>
+            <button onclick="buttonSound();buttonSP()" id="button buttonsingleplayer" style="margin-top: 12%;">Singleplayer</button>
+            <br>
+            <button onclick="buttonSound()" id="button buttonmultiplayer">Multiplayer</button>
+            <br>
+            <button onclick="buttonSound()" id="button buttonmodsandtextures">Mods and Texture Packs</button>
+            <br><br><br>
+            <button onclick="buttonSound()" class="halfbutton" id="button buttonoptions">Options...</button>
+            <button onclick="buttonSound();buttonQuit()" class="halfbutton" id="button buttonquit">Quit Game</button>
+            </center>
+        </div>
+        <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; display: fixed; bottom: 0; right: 0; position: absolute; font-size: 40px;">Copyright Mojang AB. Do not distribute.</p>
+        </div>
+        <div id="singleplayer" style="display: block;">
+            <center><p style="font-size: 40px; margin-top: 55px;">Select World</p></center>
+            <div class="selectworldbg"></div>
+            <div class="selectworldbuttons">
+                <center>
+                    <button onclick="buttonSound();buttonSwCancel()" class="onethirdbutton" id="button buttonSwcancel">Cancel</button>
+                </center>
+            </div>
+            
+        </div>
+    </body>
+
+</html>
