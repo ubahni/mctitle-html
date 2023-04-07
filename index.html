@@ -35,7 +35,7 @@
                     <br>
                     <button onclick="buttonSound();buttonSP()" id="button buttonsingleplayer" style="margin-top: 4%;">Singleplayer</button>
                     <br>
-                    <button onclick="buttonSound()" id="button buttonmultiplayer">Multiplayer</button>
+                    <button onclick="buttonSound();buttonMP()" id="button buttonmultiplayer">Multiplayer</button>
                     <br>
                     <button onclick="buttonSound()" id="button buttonmodsandtextures">Mods and Texture Packs</button>
                     <br><br><br>
@@ -53,15 +53,48 @@
             <div class="selectworldbg"></div>
             <div class="selectworldbuttons">
                 <center>
-                    <button disabled="true" onclick="buttonSound();buttonSwCancel()" class="onethirdbutton" id="button buttonSwplayselected">Play Selected World</button>
-                    <button onclick="buttonSound();buttonSwCancel()" class="onethirdbutton" style="margin-left: 10px;" id="button buttonSwnewworld">Create New World</button>
+                    <button disabled="true" onclick="buttonSound();buttonSWPlaySelected()" class="onethirdbutton" id="button">Play Selected World</button>
+                    <button onclick="buttonSound();buttonSwCreateNew()" class="onethirdbutton" style="margin-left: 10px;" id="button">Create New World</button>
                     <br>
-                    <button disabled="true" onclick="buttonSound();buttonSwCancel()" class="onesixthbutton" id="button buttonSwrename">Rename</button>
-                    <button disabled="true" onclick="buttonSound();buttonSwCancel()" class="onesixthbutton" id="button buttonSwdelete">Delete</button>
-                    <button onclick="buttonSound();buttonSwCancel()" class="onethirdbutton" style="margin-left: 10px;" id="button buttonSwnewworld">Cancel</button>
+                    <button disabled="true" onclick="buttonSound();buttonSWRename()" class="onesixthbutton" id="button">Rename</button>
+                    <button disabled="true" onclick="buttonSound();buttonSWCancel()" class="onesixthbutton" id="button">Delete</button>
+                    <button onclick="buttonSound();buttonCancel()" class="onethirdbutton" style="margin-left: 10px;" id="button">Cancel</button>
                 </center>
             </div>
             
+        </div>
+        
+        <div id="multiplayer" style="display: none;">
+            <center>
+            
+            <p style="font-size: 40px; margin-top: 55px;">Play Multiplayer</p></center>
+            <p style="color: #a0a0a0; margin-top: 100px; margin-left: 20%;">Minecraft Multiplayer is currently not finished, but there<br> is some buggy early testing going on.</p>
+            <p style="color: #a0a0a0; margin-top: 70px; margin-left: 20%;">Enter the IP of a server to connect to it.</p>
+            <div class="plaympoptions">
+                <center>
+                    <input id="ipInput" style="margin-bottom: 4%;">
+                    <br>
+                    <button onclick="buttonSound();buttonMPConnect()" id="buttonMPConnect">Connect</button>
+                    <br>
+                    <button onclick="buttonSound();buttonCancel()" id="button">Cancel</button>
+                </center>
+            </div>
+
+            
+            
+        </div>
+
+        <div id="multiplayerConnecting" style="display: none;">
+            <button onclick="buttonSound();buttonCancel()" style="bottom: 0; position: fixed; left: 50%; transform: translateX(-50%); margin-bottom: 140px;">Cancel</button>
+            <center>
+                <div id="multiplayerConnectingProcess" style="display: block;">
+                    <p style="margin-top: 11%">Connecting to the server...</p>
+                </div>
+                <div id="multiplayerConnectingFailed" style="display: none;">
+                    <p style="margin-top: 11%">Failed to connect to the server</p>
+                    <p style="margin-top: 6%">Connection timed out: connect</p>
+                </div>
+            </center>
         </div>
 
     </body>

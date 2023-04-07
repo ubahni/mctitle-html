@@ -85,9 +85,22 @@ body {
     margin-top: 70px
 }
 
-.text {
+p {
     font-size: 40px;
 }
+
+input {
+    width: 735px;
+    height: 70px;
+    font-size: 35px;
+    border-width: 4px;
+    border-color: #a0a0a0;
+    border-style: solid;
+    background-color: black;
+    padding-left: 15px;
+    /*caret-color: transparent;*/
+    outline: none;
+} /* underscore caret not possible without a lot of tinkering */
 
 .selectworldbg {
     display: block;
@@ -114,22 +127,22 @@ button {
     border-width: 0px;
     background-color: transparent;
     text-align: center;
-} button:disabled { background-image: url("img/buttons/Full/disabled.png"); color: #a0a0a0; text-shadow: 0px 0px } button:hover { background-image: url("img/buttons/Full/hover.png") }
+} button:disabled { background-image: url("img/buttons/Full/disabled.png"); color: #a0a0a0; text-shadow: 0px 0px } button:hover:enabled { background-image: url("img/buttons/Full/hover.png") }
 
 .halfbutton {
     margin-left: 5px;
     margin-right: 5px;
     background-image: url("img/buttons/Half/normal.png");
     width: 360px;
-} .halfbutton:hover { background-image: url("img/buttons/Half/hover.png") } .halfbutton:disabled { background-image: url("img/buttons/Half/disabled.png");}
+} .halfbutton:hover:enabled { background-image: url("img/buttons/Half/hover.png") } .halfbutton:disabled { background-image: url("img/buttons/Half/disabled.png");}
 
 .onethirdbutton {
     background-image: url("img/buttons/OneThird/normal.png");
     width: 560px;
-} .onethirdbutton:hover { background-image: url("img/buttons/OneThird/hover.png") } .onethirdbutton:disabled { background-image: urL("img/buttons/OneThird/disabled.png")}
+} .onethirdbutton:hover:enabled { background-image: url("img/buttons/OneThird/hover.png") } .onethirdbutton:disabled { background-image: urL("img/buttons/OneThird/disabled.png")}
 
 .onesixthbutton {
     background-image: url("img/buttons/OneSixth/normal.png");
     width: 275px;
-} .onesixthbutton:hover { background-image: url("img/buttons/OneSixth/hover.png") } .onesixthbutton:disabled { background-image: urL("img/buttons/OneSixth/disabled.png")}
+} .onesixthbutton:hover:enabled { background-image: url("img/buttons/OneSixth/hover.png") } .onesixthbutton:disabled { background-image: urL("img/buttons/OneSixth/disabled.png")}
 

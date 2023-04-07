@@ -1,5 +1,18 @@
-var audio = new Audio("audio/minecraftbutton.mp3")
-var button = document.getElementById("button")
+window.addEventListener("DOMContentLoaded", function() {
+    const titlescreen = document.getElementById("titlescreen");
+    const singleplayer = document.getElementById("singleplayer");
+    const options = document.getElementById("options");
+
+    const ipInput = document.getElementById("ipInput")
+    const multiplayer = document.getElementById("multiplayer");
+    const multiplayerConnecting = document.getElementById("multiplayerConnecting");
+
+    const multiplayerConnectingProcess = document.getElementById("multiplayerConnectingProcess");
+    const multiplayerConnectingFailed = document.getElementById("multiplayerConnectingFailed");
+});
+
+let audio = new Audio("audio/minecraftbutton.mp3")
+let button = document.getElementById("button")
 
 function buttonSound() {
     audio.play();
@@ -21,22 +34,54 @@ function buttonSP() {
     }, 1);
 }
 
-function buttonSwCancel() {
+function buttonCancel() {
     setTimeout(function() {
         titlescreen.style.display = "block";
-        singleplayer.getElementById("singleplayer").style.display = "none";
+        singleplayer.style.display = "none";
+        multiplayerConnecting.style.display = "none";
+        multiplayer.style.display = "none";
+        multiplayerConnectingProcess.style.display = "block";
+        multiplayerConnectingFailed.style.display = "none";
     }, 1);
 }
 
+function buttonMP() {
+    setTimeout(function() {
+        titlescreen.style.display = "none";
+        multiplayer.style.display = "block";
+        singleplayer.style.display = "none";
+    }, 1);
+}
+
+function buttonMPConnect() {
+
+    setTimeout(function() {
+        multiplayer.style.display = "none";
+        multiplayerConnecting.style.display = "block";
+        setTimeout(function() {
+            multiplayerConnectingProcess.style.display = "none";
+            multiplayerConnectingFailed.style.display = "block";
+        }, 3000);
+    }, 1);
+
+
+}
+
+setInterval(function() {
+    let inputValue = ipInput.value.trim();
+
+    if (inputValue.length > 0) {
+        document.getElementById("buttonMPConnect").disabled = false;
+    } else {
+        document.getElementById("buttonMPConnect").disabled = true;
+    }
+}, 2);
+
 window.addEventListener("DOMContentLoaded", function() {
 
-const titlescreen = document.getElementById("titlescreen");
-const singleplayer = document.getElementById("singleplayer");
-const multiplayer = document.getElementById("multiplayer");
-const options = document.getElementById("options");
+/* Pages */
 
-
-const lines = [ /* 15 characters max - 5 characters min */
+const lines = [ /* 15 characters max - 4 characters min */
     "As seen on TV!",
     "Awesome!",
     "100% pure!",
@@ -298,7 +343,7 @@ setInterval(function() {
     const marginLeft = (parentWidth - textWidth);
 
     splashText.style.marginLeft = marginLeft / 1.5 + "px";
-}, 10);
+}, 1);
 
 });
 
