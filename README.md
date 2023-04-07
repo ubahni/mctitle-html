@@ -3,4 +3,4 @@
 
  This will be hosted with every single page found on the title screen - but not the game.
 
- ![](https://i.imgur.com/znFxcy1.png)
+ ![](https://i.imgur.com/jj8Gjeh.png)
