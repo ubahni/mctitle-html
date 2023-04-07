@@ -16,11 +16,14 @@
     </head>
 
     <body style="margin:0">
-        <div id="titlescreen" style="display: none;">
+        <div id="titlescreen" style="display: block;">
         <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; display: fixed; color: #505050">Minecraft Beta 1.7</p>
         <div style="display: flex; justify-content: center; align-items: center;">
             <center>
             <img height="160px" class="logo" src="img/logo.svg">
+            <div class="tilt">
+                <div id="splash" class="pop">You&nbsp;have&nbsp;JavaScript&nbsp;off!</div>
+            </div>
             <br>
             <button onclick="buttonSound();buttonSP()" id="button buttonsingleplayer" style="margin-top: 12%;">Singleplayer</button>
             <br>
@@ -34,7 +37,7 @@
         </div>
         <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; display: fixed; bottom: 0; right: 0; position: absolute; font-size: 40px;">Copyright Mojang AB. Do not distribute.</p>
         </div>
-        <div id="singleplayer" style="display: block;">
+        <div id="singleplayer" style="display: none;">
             <center><p style="font-size: 40px; margin-top: 55px;">Select World</p></center>
             <div class="selectworldbg"></div>
             <div class="selectworldbuttons">
