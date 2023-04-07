@@ -178,7 +178,6 @@ const lines = [ /* 15 characters max - 5 characters min */
     "The sum of its parts!",
     "BTAF used to be good!",
     "I miss ADOM!",
-    "umop-apisdn!",
     "OICU812!",
     "Bring me Ray Cokes!",
     "Finger-licking!",
@@ -262,7 +261,6 @@ const lines = [ /* 15 characters max - 5 characters min */
     "Let our battle's begin!",
     "The sky is the limit!",
     "Rest in peace, Technoblade!",
-    "My lawyer advised me to not finish this joke",
   ];
   
 const randomIndex = Math.floor(Math.random() * lines.length);
