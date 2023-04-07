@@ -30,7 +30,7 @@ function buttonSwCancel() {
 
 window.addEventListener("DOMContentLoaded", function() {
 
-const lines = [
+const lines = [ /* 15 characters max - 5 characters min */
     "As seen on TV!",
     "Awesome!",
     "100% pure!",
@@ -48,7 +48,6 @@ const lines = [
     "Excitement!",
     "More than 500 sold!",
     "One of a kind!",
-    "What's a <a href='https://www.youtube.com/'!>YouTube?</a>",
     "Indev!",
     "Spiders everywhere!",
     "Check it out!",
@@ -102,7 +101,6 @@ const lines = [
     "Bringing home the bacon!",
     "Indie!",
     "GOTY!",
-    "Ceci n'est pas une title screen!",
     "Euclidian!",
     "Now in 2D only!",
     "Inspirational!",
@@ -229,11 +227,10 @@ const lines = [
     "Lives in a pineapple under the sea!",
     "MAP11 has two names!",
     "Omnipotent!",
-    "Gasp   !",
+    "Gasp!",
     "...!",
     "Bees, bees, bees, bees!",
     "Jag känner en bot!",
-    "This text is hard to read if you're using mums old iPad, but at 1080p it's fine!",
     "Haha, LOL!",
     "Hampsterdance!",
     "Switches and ores!",
@@ -247,7 +244,6 @@ const lines = [
     "Oh, ok, Pigmen!",
     "Finally with ladders!",
     "Scary!",
-    "Play Minecraft, Watch Topgear, Get Pig!",
     "Twittered about!",
     "Jump up, jump up, and get down!",
     "Joel is neat!",
@@ -259,7 +255,6 @@ const lines = [
     "Treatment for your rash!",
     "Noun is an autonym!",
     "Information wants to be free!",
-    "Almost never is an interesting concept!",
     "Lots of truthiness!",
     "The creeper is a spy!",
     "Turing complete!",
@@ -267,6 +262,7 @@ const lines = [
     "Let our battle's begin!",
     "The sky is the limit!",
     "Rest in peace, Technoblade!",
+    "My lawyer advised me to not finish this joke",
   ];
   
 const randomIndex = Math.floor(Math.random() * lines.length);
@@ -275,12 +271,17 @@ const randomLine = lines[randomIndex];
   
 const lineResult = randomLine.replace(/\s/g, '&nbsp;');
 
-var splashText = document.getElementById("splash")
+let splashText = document.getElementById("splash")
 
 splashText.innerHTML = lineResult;
 
-const splashsize = 80 - splashText.textContent.length;
+const splashlength = splashText.textContent.length;
+console.log(splashlength);
 
-splashText.style.fontSize = `${splashsize}px`;
+const parentWidth = 550; // replace 700 with the width of the parent element
+const textWidth = splashText.offsetWidth;
+const marginLeft = (parentWidth - textWidth);
+
+splashText.style.marginLeft = marginLeft / 1.5 + "px";
 
 });
