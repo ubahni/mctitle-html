@@ -89,7 +89,7 @@ button {
     width: 735px;
     margin-top: 20px;
     font-size: 35px;
-    background-image: url("img/minecraftbuttonnormal.png");
+    background-image: url("img/buttons/full/normal.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-blend-mode: initial;
@@ -97,28 +97,22 @@ button {
     border-width: 0px;
     background-color: transparent;
     text-align: center;
-}
+} button:disabled { background-image: url("img/buttons/Full/disabled.png"); color: #a0a0a0; text-shadow: 0px 0px } button:hover { background-image: url("img/buttons/Full/hover.png") }
 
 .halfbutton {
     margin-left: 5px;
     margin-right: 5px;
-    background-image: url("img/minecraftbuttonhalfnormal.png");
+    background-image: url("img/buttons/Half/normal.png");
     width: 360px;
-}
-
-button:hover {
-    background-image: url("img/minecraftbuttonhover.png")
-}
-
-.halfbutton:hover {
-    background-image: url("img/minecraftbuttonhalfhover.png")
-}
+} .halfbutton:hover { background-image: url("img/buttons/Half/hover.png") } .halfbutton:disabled { background-image: url("img/buttons/Half/disabled.png");}
 
 .onethirdbutton {
-    background-image: url("img/minecraftbutton13.png");
+    background-image: url("img/buttons/OneThird/normal.png");
     width: 560px;
-}
+} .onethirdbutton:hover { background-image: url("img/buttons/OneThird/hover.png") } .onethirdbutton:disabled { background-image: urL("img/buttons/OneThird/disabled.png")}
 
-.onethirdbutton:hover {
-    background-image: url("img/minecraftbutton13hover.png")
-}
+.onesixthbutton {
+    background-image: url("img/buttons/OneSixth/normal.png");
+    width: 275px;
+} .onesixthbutton:hover { background-image: url("img/buttons/OneSixth/hover.png") } .onesixthbutton:disabled { background-image: urL("img/buttons/OneSixth/disabled.png")}
+
