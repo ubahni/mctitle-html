@@ -328,7 +328,7 @@ console.log(splashlength);
 
 const parentWidth = 700;
 
-/* Show title after 4 seconds */
+/* Show title after 1.5 seconds */
 
 const mojanglogo = document.getElementById("mojanglogo");
 
@@ -336,7 +336,7 @@ setTimeout(function() {
     mojanglogo.style.display = "none";
     titlescreen.style.display = "block";
     document.querySelector("body").style.backgroundSize = "110px"
-}, 2);
+}, 1500);
 
 setInterval(function() {
     const textWidth = splashText.offsetWidth;

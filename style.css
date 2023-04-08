@@ -81,8 +81,16 @@ body {
 
 /* SPLASH TEXT END */
 
-.logo {
-    margin-top: 70px
+.titlecontentcontainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.titlecontent {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 p {
@@ -100,6 +108,7 @@ input {
     padding-left: 15px;
     /*caret-color: transparent;*/
     outline: none;
+    cursor: default;
 } /* underscore caret not possible without a lot of tinkering */
 
 .selectworldbg {

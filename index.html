@@ -11,47 +11,54 @@
         <link rel="icon" href="https://web.archive.org/web/20150630225904im_/https://minecraft.net/favicon.png">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-        <noscript><marquee style="display: fixed; color: red">Content on this site may not be available due to your JavaScript setting being off. Please enable it in your settings to use important features</marquee></noscript>
+        <noscript><p style="position: fixed; text-shadow: none; color: red; z-index: 2; font-size: 22px; margin-top: -3px; top: 0; left: 0">Your JavaScript is either off, has been blocked by an extension, or just not available on your PC. Please enable it in your browsers settings to continue</p></noscript> <!--No JS reminder-->
 
     </head>
 
     <body style="margin:0">
-        <div id="mojanglogo" style="display: block;">
+        <div id="mojanglogo" style="display: block;"> <!--Loading screen-->
             <center>
-                <img class="mojangimg" width="700" src="img/mojang.png">
+                <img class="mojangimg" width="700" src="img/mojang.png"> <!--Mojang logo-->
             </center>
         </div>
 
 
         <div id="titlescreen" style="display: none;">
-            <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; display: fixed; color: #505050">Minecraft Beta 1.7</p>
+            <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; position: fixed; color: #505050">Minecraft Beta 1.7</p> <!--Top left text-->
         
-            <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="titlecontentcontainer">
                 <center>
-                    <img height="160px" class="logo" src="img/logo.svg">
-                    <div class="tilt">
-                        <div id="splash" style="margin-left: 700px;" class="pop">You&nbsp;have&nbsp;JavaScript&nbsp;off!</div>
+
+                    <div class="titlecontent"> <!--Navigation buttons-->
+                        <img height="160px" class="logo" src="img/logo.svg">
+                        <div class="tilt"> <!--Splash text container-->
+                            <div id="splash" style="margin-left: 700px;" class="pop">ERR</div> <!--Splash text-->
+                        </div>
+                        <br>
+                        <button onclick="buttonSound();buttonSP()" id="button buttonsingleplayer" style="margin-top: 4%;">Singleplayer</button>
+                        <br>
+                        <button onclick="buttonSound();buttonMP()" id="button buttonmultiplayer">Multiplayer</button>
+                        <br>
+                        <button onclick="buttonSound()" id="button buttonmodsandtextures">Mods and Texture Packs</button>
+                        <br><br><br>
+                        <button onclick="buttonSound()" class="halfbutton" id="button buttonoptions">Options...</button>
+                        <button onclick="buttonSound();buttonQuit()" class="halfbutton" id="button buttonquit">Quit Game</button>
                     </div>
-                    <br>
-                    <button onclick="buttonSound();buttonSP()" id="button buttonsingleplayer" style="margin-top: 4%;">Singleplayer</button>
-                    <br>
-                    <button onclick="buttonSound();buttonMP()" id="button buttonmultiplayer">Multiplayer</button>
-                    <br>
-                    <button onclick="buttonSound()" id="button buttonmodsandtextures">Mods and Texture Packs</button>
-                    <br><br><br>
-                    <button onclick="buttonSound()" class="halfbutton" id="button buttonoptions">Options...</button>
-                    <button onclick="buttonSound();buttonQuit()" class="halfbutton" id="button buttonquit">Quit Game</button>
+
                 </center>
             </div>
-            <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; display: fixed; bottom: 0; right: 0; position: absolute; font-size: 40px;">Copyright Mojang AB. Do not distribute.</p>
+
+            <p class="text" style="margin-bottom: 0px; text-shadow: 4px 4px #141414; background-color: transparent; margin-top: -3px; margin-left: 3px; bottom: 0; right: 0; position: absolute; font-size: 40px;">Mojang AB. Do not distribute.</p> <!--Bottom right text-->
         </div>
 
         <div id="singleplayer" style="display: none;">
             <center>
             
             <p style="font-size: 40px; margin-top: 55px;">Select World</p></center>
-            <div class="selectworldbg"></div>
-            <div class="selectworldbuttons">
+            <div class="selectworldbg"></div> <!--Area that all worlds are in-->
+
+            <div class="selectworldbuttons"> <!--Bottom nav buttons-->
+
                 <center>
                     <button disabled="true" onclick="buttonSound();buttonSWPlaySelected()" class="onethirdbutton" id="button">Play Selected World</button>
                     <button onclick="buttonSound();buttonSwCreateNew()" class="onethirdbutton" style="margin-left: 10px;" id="button">Create New World</button>
@@ -60,6 +67,7 @@
                     <button disabled="true" onclick="buttonSound();buttonSWCancel()" class="onesixthbutton" id="button">Delete</button>
                     <button onclick="buttonSound();buttonCancel()" class="onethirdbutton" style="margin-left: 10px;" id="button">Cancel</button>
                 </center>
+
             </div>
             
         </div>
@@ -68,19 +76,23 @@
             <center>
             
             <p style="font-size: 40px; margin-top: 55px;">Play Multiplayer</p></center>
+
             <p style="color: #a0a0a0; margin-top: 100px; margin-left: 20%;">Minecraft Multiplayer is currently not finished, but there<br> is some buggy early testing going on.</p>
             <p style="color: #a0a0a0; margin-top: 70px; margin-left: 20%;">Enter the IP of a server to connect to it.</p>
-            <div class="plaympoptions">
+
+            <div class="plaympbuttons">
+
                 <center>
-                    <input id="ipInput" style="margin-bottom: 4%;">
+                    <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="ipInput" style="margin-bottom: 4%;">
                     <br>
                     <button onclick="buttonSound();buttonMPConnect()" id="buttonMPConnect">Connect</button>
                     <br>
                     <button onclick="buttonSound();buttonCancel()" id="button">Cancel</button>
                 </center>
+
             </div>
 
-            
+            </center>
             
         </div>
 
