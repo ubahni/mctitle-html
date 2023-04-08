@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Minecraft';
-    src: url(fonts/minecraft_font.ttf);
+    src: url(fonts/minecraft_font.woff2) format('woff2'),
+         url(fonts/minecraft_font.woff) format('woff');
 }
 
 * {
@@ -35,7 +36,7 @@ body {
 
 #splash {
     color: yellow;
-    font-size: 60px;
+    font-size: 50px;
     position: absolute;
     margin-top: 10px;
     text-align: center;
@@ -94,13 +95,13 @@ body {
 }
 
 p {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 input {
     width: 735px;
     height: 70px;
-    font-size: 35px;
+    font-size: 30px;
     border-width: 4px;
     border-color: #a0a0a0;
     border-style: solid;
@@ -127,7 +128,8 @@ button {
     height: 75px;
     width: 735px;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 27px;
+    padding-bottom: 10px;
     background-image: url("img/buttons/Full/normal.png");
     background-repeat: no-repeat;
     background-size: 100%;

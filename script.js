@@ -336,7 +336,7 @@ setTimeout(function() {
     mojanglogo.style.display = "none";
     titlescreen.style.display = "block";
     document.querySelector("body").style.backgroundSize = "110px"
-}, 1500);
+}, 1);
 
 setInterval(function() {
     const textWidth = splashText.offsetWidth;
