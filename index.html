@@ -97,14 +97,14 @@
         </div>
 
         <div id="multiplayerConnecting" style="display: none;">
-            <button onclick="buttonSound();buttonCancel()" style="bottom: 0; position: fixed; left: 50%; transform: translateX(-50%); margin-bottom: 140px;">Cancel</button>
+            <button onclick="buttonSound();buttonCancel()" id="buttonMPConnectingCancel" style="bottom: 0; position: fixed; left: 50%; transform: translateX(-50%); margin-bottom: 140px;">Cancel</button>
             <center>
                 <div id="multiplayerConnectingProcess" style="display: block;">
                     <p style="margin-top: 11%">Connecting to the server...</p>
                 </div>
                 <div id="multiplayerConnectingFailed" style="display: none;">
                     <p style="margin-top: 11%">Failed to connect to the server</p>
-                    <p style="margin-top: 6%">Connection timed out: connect</p>
+                    <p id="multiplayerConnectingFailedreasonText" style="margin-top: 6%">Unknown hostname</p>
                 </div>
             </center>
         </div>

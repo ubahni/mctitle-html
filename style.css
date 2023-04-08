@@ -129,7 +129,7 @@ button {
     width: 735px;
     margin-top: 20px;
     font-size: 27px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* Fixes text allignment issue with .woff2 */ 
     background-image: url("img/buttons/Full/normal.png");
     background-repeat: no-repeat;
     background-size: 100%;

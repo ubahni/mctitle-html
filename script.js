@@ -1,16 +1,3 @@
-window.addEventListener("DOMContentLoaded", function() {
-    const titlescreen = document.getElementById("titlescreen");
-    const singleplayer = document.getElementById("singleplayer");
-    const options = document.getElementById("options");
-
-    const ipInput = document.getElementById("ipInput")
-    const multiplayer = document.getElementById("multiplayer");
-    const multiplayerConnecting = document.getElementById("multiplayerConnecting");
-
-    const multiplayerConnectingProcess = document.getElementById("multiplayerConnectingProcess");
-    const multiplayerConnectingFailed = document.getElementById("multiplayerConnectingFailed");
-});
-
 let audio = new Audio("audio/minecraftbutton.mp3")
 let button = document.getElementById("button")
 
@@ -42,6 +29,7 @@ function buttonCancel() {
         multiplayer.style.display = "none";
         multiplayerConnectingProcess.style.display = "block";
         multiplayerConnectingFailed.style.display = "none";
+        buttonMPConnectingCancel.textContent = "Cancel" 
     }, 1);
 }
 
@@ -56,14 +44,15 @@ function buttonMP() {
 function buttonMPConnect() {
 
     setTimeout(function() {
+        
         multiplayer.style.display = "none";
         multiplayerConnecting.style.display = "block";
         setTimeout(function() {
             multiplayerConnectingProcess.style.display = "none";
             multiplayerConnectingFailed.style.display = "block";
+            buttonMPConnectingCancel.textContent = "Back to title screen" 
         }, 3000);
     }, 1);
-
 
 }
 
