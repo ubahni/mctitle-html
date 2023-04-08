@@ -17,6 +17,7 @@ body {
     height: 100%;
 }
 
+
 #mojanglogo {
     position: relative;
     height: 100vh;
@@ -82,8 +83,55 @@ body {
 
 /* SPLASH TEXT END */
 
-.titlecontentcontainer {
+.texturepacktitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; /* optional, if you want to center the text horizontally */
+    width: 100%;
+    height: 125px;
+    font-size: 30px;
+} .texturepacktitle span { margin-bottom: 32px; }
+
+.texturepackmain {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.texturepackbuttons {
+    display: block;
     position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.selectworldtitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; /* optional, if you want to center the text horizontally */
+    width: 100%;
+    height: 125px;
+    font-size: 30px;
+} .selectworldtitle span { margin-bottom: 32px; }
+
+.selectworldbg {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.selectworldbuttons {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+
+.titlecontentcontainer {
     height: 100%;
     width: 100%;
 }
@@ -111,18 +159,6 @@ input {
     outline: none;
     cursor: default;
 } /* underscore caret not possible without a lot of tinkering */
-
-.selectworldbg {
-    display: block;
-    width: 100%;
-    height: 600px;
-    margin-top: -35px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.selectworldbuttons {
-    display: block;
-}
 
 button {
     height: 75px;

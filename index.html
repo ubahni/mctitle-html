@@ -39,7 +39,7 @@
                         <br>
                         <button onclick="buttonSound();buttonMP()" id="button buttonmultiplayer">Multiplayer</button>
                         <br>
-                        <button onclick="buttonSound()" id="button buttonmodsandtextures">Mods and Texture Packs</button>
+                        <button onclick="buttonSound();buttonMTP()" id="button buttonmodsandtextures">Mods and Texture Packs</button>
                         <br><br><br>
                         <button onclick="buttonSound()" class="halfbutton" id="button buttonoptions">Options...</button>
                         <button onclick="buttonSound();buttonQuit()" class="halfbutton" id="button buttonquit">Quit Game</button>
@@ -54,22 +54,42 @@
         <div id="singleplayer" style="display: none;">
             <center>
             
-            <p style="font-size: 30px; margin-top: 55px;">Select World</p></center>
-            <div class="selectworldbg"></div> <!--Area that all worlds are in-->
-
-            <div class="selectworldbuttons"> <!--Bottom nav buttons-->
-
-                <center>
+                <div class="selectworldtitle">
+                    <span>Select World</span>
+                </div>
+    
+                <div class="selectworldbg">
+    
+                </div>
+    
+                <div class="selectworldbuttons"> <!--Bottom nav buttons-->
                     <button disabled="true" onclick="buttonSound();buttonSWPlaySelected()" class="onethirdbutton" id="button">Play Selected World</button>
                     <button onclick="buttonSound();buttonSwCreateNew()" class="onethirdbutton" style="margin-left: 10px;" id="button">Create New World</button>
                     <br>
                     <button disabled="true" onclick="buttonSound();buttonSWRename()" class="onesixthbutton" id="button">Rename</button>
                     <button disabled="true" onclick="buttonSound();buttonSWCancel()" class="onesixthbutton" id="button">Delete</button>
                     <button onclick="buttonSound();buttonCancel()" class="onethirdbutton" style="margin-left: 10px;" id="button">Cancel</button>
-                </center>
+                </div>
+            
+        </div>
+
+        <div id="mtp" style="display: none;">
+        <center>
+
+            <div class="texturepacktitle">
+                <span>Select Texture Pack</span>
+            </div>
+
+            <div class="texturepackmain">
 
             </div>
-            
+
+            <div class="texturepackbuttons"> <!--Bottom nav buttons-->
+                <button onclick="buttonSound();buttonMTPTexturePackFolder()" class="onethirdbutton" id="button">Open texture pack folder</button>
+                <button onclick="buttonSound();buttonMTPDone()" class="onethirdbutton" style="margin-left: 10px;" id="button">Done</button>
+            </div>
+
+        </center>
         </div>
         
         <div id="multiplayer" style="display: none;">

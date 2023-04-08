@@ -15,45 +15,47 @@ function buttonQuit() {
 }
 
 function buttonSP() {
-    setTimeout(function() {
-        titlescreen.style.display = "none";
-        singleplayer.style.display = "block";
-    }, 1);
+    titlescreen.style.display = "none";
+    singleplayer.style.display = "block";
+}
+
+function buttonMTP() {
+    titlescreen.style.display = "none";
+    mtp.style.display = "block";
 }
 
 function buttonCancel() {
-    setTimeout(function() {
-        titlescreen.style.display = "block";
-        singleplayer.style.display = "none";
-        multiplayerConnecting.style.display = "none";
-        multiplayer.style.display = "none";
-        multiplayerConnectingProcess.style.display = "block";
-        multiplayerConnectingFailed.style.display = "none";
-        buttonMPConnectingCancel.textContent = "Cancel" 
-    }, 1);
+    titlescreen.style.display = "block";
+    singleplayer.style.display = "none";
+    mtp.style.display = "none";
+    multiplayerConnecting.style.display = "none";
+    multiplayer.style.display = "none";
+    multiplayerConnectingProcess.style.display = "block";
+    multiplayerConnectingFailed.style.display = "none";
+    buttonMPConnectingCancel.textContent = "Cancel" 
 }
 
 function buttonMP() {
-    setTimeout(function() {
-        titlescreen.style.display = "none";
-        multiplayer.style.display = "block";
-        singleplayer.style.display = "none";
-    }, 1);
+    titlescreen.style.display = "none";
+    multiplayer.style.display = "block";
+    singleplayer.style.display = "none";
 }
 
 function buttonMPConnect() {
 
+    multiplayer.style.display = "none";
+    multiplayerConnecting.style.display = "block";
     setTimeout(function() {
-        
-        multiplayer.style.display = "none";
-        multiplayerConnecting.style.display = "block";
-        setTimeout(function() {
-            multiplayerConnectingProcess.style.display = "none";
-            multiplayerConnectingFailed.style.display = "block";
-            buttonMPConnectingCancel.textContent = "Back to title screen" 
-        }, 3000);
-    }, 1);
+        multiplayerConnectingProcess.style.display = "none";
+        multiplayerConnectingFailed.style.display = "block";
+        buttonMPConnectingCancel.textContent = "Back to title screen";
+    }, 3000);
 
+}
+
+function buttonMTPDone() {
+    mtp.style.display = "none";
+    titlescreen.style.display = "block";
 }
 
 setInterval(function() {
@@ -203,7 +205,6 @@ const lines = [ /* 15 characters max - 4 characters min */
     "Let's danec!",
     "Seecret Friday update!",
     "Reference implementation!",
-    "Lewd with two dudes with food!",
     "i'm lovin' it!",
     "Kiss the sky!",
     "20 GOTO 10!",
@@ -230,7 +231,6 @@ const lines = [ /* 15 characters max - 4 characters min */
     "SWM forever!",
     "Representing Edsbyn!",
     "Matt Damon!",
-    "Superfragilisticexpialidocious!",
     "Consummate V's!",
     "Cow Tools!",
     "Double buffered!",
@@ -262,13 +262,12 @@ const lines = [ /* 15 characters max - 4 characters min */
     "Very fun!",
     "12345 is a bad password!",
     "Vote for net neutrality!",
-    "Lives in a pineapple under the sea!",
     "MAP11 has two names!",
     "Omnipotent!",
     "Gasp!",
     "...!",
     "Bees, bees, bees, bees!",
-    "Jag känner en bot!",
+    "Jag kanner en bot!",
     "Haha, LOL!",
     "Hampsterdance!",
     "Switches and ores!",
