@@ -32,7 +32,7 @@
                     <div class="titlecontent"> <!--Navigation buttons-->
                         <img height="160px" class="logo" src="img/logo.svg">
                         <div class="tilt"> <!--Splash text container-->
-                            <div id="splash" style="margin-left: 700px;" class="pop">ERR</div> <!--Splash text-->
+                            <div id="splash" style="margin-left: 700px;" class="pop"></div> <!--Splash text-->
                         </div>
                         <br>
                         <button onclick="buttonSound();buttonSP()" id="button buttonsingleplayer" style="margin-top: 4%;">Singleplayer</button>
@@ -41,7 +41,7 @@
                         <br>
                         <button onclick="buttonSound();buttonMTP()" id="button buttonmodsandtextures">Mods and Texture Packs</button>
                         <br><br><br>
-                        <button onclick="buttonSound()" class="halfbutton" id="button buttonoptions">Options...</button>
+                        <button disabled="true" onclick="buttonSound()" class="halfbutton" id="button buttonoptions">Options...</button>
                         <button onclick="buttonSound();buttonQuit()" class="halfbutton" id="button buttonquit">Quit Game</button>
                     </div>
 
@@ -63,8 +63,8 @@
                 </div>
     
                 <div class="selectworldbuttons"> <!--Bottom nav buttons-->
-                    <button disabled="true" onclick="buttonSound();buttonSWPlaySelected()" class="onethirdbutton" id="button">Play Selected World</button>
-                    <button onclick="buttonSound();buttonSwCreateNew()" class="onethirdbutton" style="margin-left: 10px;" id="button">Create New World</button>
+                    <button disabled="true" disabled="true" onclick="buttonSound();buttonSWPlaySelected()" class="onethirdbutton" id="button">Play Selected World</button>
+                    <button disabled="true" onclick="buttonSound();buttonSwCreateNew()" class="onethirdbutton" style="margin-left: 10px;" id="button">Create New World</button>
                     <br>
                     <button disabled="true" onclick="buttonSound();buttonSWRename()" class="onesixthbutton" id="button">Rename</button>
                     <button disabled="true" onclick="buttonSound();buttonSWCancel()" class="onesixthbutton" id="button">Delete</button>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="texturepackbuttons"> <!--Bottom nav buttons-->
-                <button onclick="buttonSound();buttonMTPTexturePackFolder()" class="onethirdbutton" id="button">Open texture pack folder</button>
+                <button disabled="true" onclick="buttonSound();buttonMTPTexturePackFolder()" class="onethirdbutton" id="button">Open texture pack folder</button>
                 <button onclick="buttonSound();buttonMTPDone()" class="onethirdbutton" style="margin-left: 10px;" id="button">Done</button>
             </div>
 
