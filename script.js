@@ -325,7 +325,7 @@ setTimeout(function() {
     mojanglogo.style.display = "none";
     titlescreen.style.display = "block";
     document.querySelector("body").style.backgroundSize = "110px"
-}, 1);
+}, 1500); /* Code for disabling the Mojang logo */
 
 setInterval(function() {
     const textWidth = splashText.offsetWidth;
