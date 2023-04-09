@@ -1,8 +1,8 @@
-@font-face {
+/*@font-face {
     font-family: 'Minecraft';
     src: url(fonts/minecraft_font.woff2) format('woff2'),
          url(fonts/minecraft_font.woff) format('woff');
-}
+}*/ 
 
 * {
     color: #e0e0e0;
@@ -37,7 +37,7 @@ body {
 
 #splash {
     color: yellow;
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
     margin-top: 10px;
     text-align: center;
@@ -89,7 +89,7 @@ body {
     justify-content: center; /* optional, if you want to center the text horizontally */
     width: 100%;
     height: 125px;
-    font-size: 30px;
+    font-size: 40px;
 } .texturepacktitle span { margin-bottom: 32px; }
 
 .texturepackmain {
@@ -113,7 +113,7 @@ body {
     justify-content: center; /* optional, if you want to center the text horizontally */
     width: 100%;
     height: 125px;
-    font-size: 30px;
+    font-size: 40px;
 } .selectworldtitle span { margin-bottom: 32px; }
 
 .selectworldbg {
@@ -143,19 +143,18 @@ body {
 }
 
 p {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 input {
     width: 735px;
     height: 70px;
-    font-size: 30px;
+    font-size: 40px;
     border-width: 4px;
     border-color: #a0a0a0;
     border-style: solid;
     background-color: black;
     padding-left: 15px;
-    /*caret-color: transparent;*/
     outline: none;
     cursor: default;
 } /* underscore caret not possible without a lot of tinkering */
@@ -164,8 +163,7 @@ button {
     height: 75px;
     width: 735px;
     margin-top: 20px;
-    font-size: 27px;
-    padding-bottom: 10px; /* Fixes text allignment issue with .woff2 */ 
+    font-size: 35px;
     background-image: url("img/buttons/Full/normal.png");
     background-repeat: no-repeat;
     background-size: 100%;
