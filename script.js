@@ -301,37 +301,18 @@ const lines = [ /* 15 characters max - 4 characters min */
     "Rest in peace, Technoblade!",
   ];
   
-const randomIndex = Math.floor(Math.random() * lines.length);
+  const randomLine = lines[Math.floor(Math.random() * lines.length)].replace(/\s/g, '&nbsp;');
+  const splashText = document.getElementById("splash");
+  const parentWidth = 700;
   
-const randomLine = lines[randomIndex];
+  setInterval(() => splashText.style.marginLeft = `${(parentWidth - splashText.offsetWidth) / 1.5}px`, 1);
   
-const lineResult = randomLine.replace(/\s/g, '&nbsp;');
-
-let splashText = document.getElementById("splash")
-
-splashText.innerHTML = lineResult;
-
-const splashlength = splashText.textContent.length;
-console.log(splashlength);
-
-const parentWidth = 700;
-
-/* Show title after 1.5 seconds */
-
-const mojanglogo = document.getElementById("mojanglogo");
-
-setTimeout(function() {
-    mojanglogo.style.display = "none";
-    titlescreen.style.display = "block";
-    document.querySelector("body").style.backgroundSize = "110px"
-}, 1); /* Code for disabling the Mojang logo */
-
-setInterval(function() {
-    const textWidth = splashText.offsetWidth;
-    const marginLeft = (parentWidth - textWidth);
-
-    splashText.style.marginLeft = marginLeft / 1.5 + "px";
-}, 1);
+  setTimeout(() => document.getElementById("mojanglogo").style.display = "none", 1500);
+  setTimeout(() => document.getElementById("titlescreen").style.display = "block", 1500);
+  setTimeout(() => document.querySelector("body").style.backgroundSize = "110px", 1500);
+  
+  splashText.innerHTML = randomLine;
+  console.log(splashText.textContent.length);
 
 });
 
